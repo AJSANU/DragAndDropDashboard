@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jira Style Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2 class="board-heading">🗂️ Project Task Board</h2>
+  <div class="board">
+    <div class="column" data-status="Backlog">
+      <div class="column-header backlog">Backlog</div>
+      <div class="task-list" id="backlog"></div>
+      <button class="add-task" id="newTaskBtn">+ New</button>
+    </div>
+
+    <div class="column" data-status="Planning">
+      <div class="column-header planning">Planning</div>
+      <div class="task-list" id="planning"></div>
+    </div>
+
+    <div class="column" data-status="Inprogress">
+      <div class="column-header inprogress">Inprogress</div>
+      <div class="task-list" id="inprogress"></div>
+    </div>
+
+    <div class="column" data-status="Done">
+      <div class="column-header done">Done</div>
+      <div class="task-list" id="done"></div>
+    </div>
+  </div>
+
+  <!-- Task Modal -->
+  <div class="modal" id="taskModal">
+    <div class="modal-content">
+      <h3>Create New Task</h3>
+      <input type="text" id="taskEmoji" placeholder="Emoji (e.g. 🚀)" />
+      <input type="text" id="taskTitle" placeholder="Task Title" />
+      <input type="text" id="taskDesc" placeholder="Task Description" />
+      <input type="text" id="taskDate" placeholder="Date Range (e.g. Jan 1 → Jan 10)" />
+      <button id="addTask">Add Task</button>
+      <button id="closeModal">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
