@@ -14,17 +14,14 @@
       <div class="task-list" id="backlog"></div>
       <button class="add-task" id="newTaskBtn">+ New</button>
     </div>
-
     <div class="column" data-status="Planning">
       <div class="column-header planning">Planning</div>
       <div class="task-list" id="planning"></div>
     </div>
-
     <div class="column" data-status="Inprogress">
       <div class="column-header inprogress">Inprogress</div>
       <div class="task-list" id="inprogress"></div>
     </div>
-
     <div class="column" data-status="Done">
       <div class="column-header done">Done</div>
       <div class="task-list" id="done"></div>
@@ -34,7 +31,7 @@
   <!-- Task Modal -->
   <div class="modal" id="taskModal">
     <div class="modal-content">
-      <h3>Create New Task</h3>
+      <h3 id="modalTitle">Create New Task</h3>
       <input type="text" id="taskEmoji" placeholder="Emoji (e.g. 🚀)" />
       <input type="text" id="taskTitle" placeholder="Task Title" />
       <input type="text" id="taskDesc" placeholder="Task Description" />
